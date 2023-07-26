@@ -8,7 +8,7 @@ nav {
   ul {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 0.2em;
+    padding-top: 0.1em;
 
     li {
       list-style-type: none;
@@ -49,4 +49,90 @@ nav {
     content: "cate";
     color: #4b58e0;
   }
+}
+
+.section-one {
+  margin-top: 3.5em;
+
+  .container {
+    padding-left: 0;
+    .info {
+      color: #6772e3;
+    }
+
+    .lorem {
+      margin-top: 1.5em;
+      color: #bcc0c8;
+      width: 70%;
+    }
+
+    .main_test {
+      margin-top: 0.3em;
+      font-size: 3em;
+      line-height: 0.9;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    .btn-container {
+      margin-top: 2em;
+
+      .home_btn {
+        background-color: #ffcf59;
+        border: none;
+        color: #000933;
+        padding-left: 2em;
+        padding-right: 2em;
+        border-radius: 16px;
+      }
+    }
+  }
+}
+
+.section-two {
+  margin-top: 3em;
+  background-color: #525fe1;
+  height: 150px;
+  .stats_container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+
+    div {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .span_container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .vertical-bar {
+        width: 2px;
+        height: 60px;
+        background-color: #ffffff;
+      }
+
+      .fig {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #ffffff;
+      }
+
+      .fig_exp {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.section-three{
+  margin-top: 4em;
 }

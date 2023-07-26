@@ -1,7 +1,21 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import "zone.js/dist/zone";
+import { CommonModule } from "@angular/common";
+import { Component } from "@angular/core";
+import { bootstrapApplication } from "@angular/platform-browser";
+import { RouterOutlet, provideRouter } from "@angular/router";
+import { provideAnimations } from "@angular/platform-browser/animations";
+import { MatSlideToggleModule } from "@angular/material/slide-toggle";
+import { provideHttpClient } from "@angular/common/http";
+import { routes } from "./app/route";
 
-import { AppModule } from './app/app.module';
+@Component({
+  selector: "app-root",
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, MatSlideToggleModule],
+  template: ` <router-outlet></router-outlet> `,
+})
+export class App {}
 
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+bootstrapApplication(App, {
+  providers: [provideRouter(routes), provideAnimations(), provideHttpClient()],
+});
