@@ -56,6 +56,11 @@ nav {
 
   .container {
     padding-left: 0;
+
+    .img-background {
+      width: 100%;
+      height: 100%;
+    }
     .info {
       color: #6772e3;
     }
@@ -135,4 +140,93 @@ nav {
 
 .section-three{
   margin-top: 4em;
+
+  .container{
+    padding-left: 0;
+
+    .section-three-main-test{
+      margin-top: 0.3em;
+      font-size: 2.5em;
+      line-height: 0.7;
+      font-weight: bold;
+      color:#202c3b;
+    }
+
+    .btn-container {
+      margin-top: 2em;
+
+      .home_btn {
+        background-color: #ffcf59;
+        border: none;
+        color: #000933;
+        padding-left: 2em;
+        padding-right: 2em;
+        border-radius: 16px;
+      }
+    }
+
+    .section-three-content{
+      margin-top: 1.5em;
+      color: #bcc0c8;
+      width: 90%;
+    }
+
+    .card-container{
+
+      display: flex;
+      justify-content: space-evenly;
+
+      .card{
+        border: none;
+      }
+
+      .card-title{
+        color:#1b2837;
+        font-weight: bold;
+        font-size: 1.2em;
+
+      }
+
+      .card-text{
+        color:#b5b7be
+      }
+    }
+  }
+}
+
+.section-four{
+  margin-top: 1em;
+
+  .container{
+    width: 80%;
+    margin:auto;
+    .card-container{
+
+      display: flex;
+      justify-content: space-evenly;
+
+      .card{
+        border: none;
+      }
+
+      .card-title{
+        color:#1b2837;
+        font-weight: bold;
+        font-size: 1.2em;
+
+      }
+
+      .card-text{
+        color:#b5b7be
+      }
+    }
+  }
+
+}
+
+
+// general styles 
+
+.svg-container{
+  margin-bottom: 1em;
 }
