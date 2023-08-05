@@ -2,7 +2,8 @@
   <header>
     <nav>
       <div class="logo"><span>Edu</span></div>
-      <div>
+
+      <div class="items">
         <ul>
           <li>Teachers</li>
           <li>Courses</li>
@@ -15,28 +16,67 @@
         <span>Sign In</span>
         <button>Sign Up</button>
       </div>
+      <!-- for medium screens -->
+
+      <div class="dropdown">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="#9848ff"
+          class="bi bi-menu-up dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item">Teachers</a></li>
+          <li><a class="dropdown-item">Courses</a></li>
+          <li><a class="dropdown-item">Scholarship</a></li>
+          <li><a class="dropdown-item">Pricing</a></li>
+          <li><a class="dropdown-item">About Us</a></li>
+          <li><a class="dropdown-item dash"></a></li>
+          <li>
+            <a class="dropdown-item middle-span" href="#">
+              <span>Sign In</span>
+            </a>
+          </li>
+          <li><button class="dropdown-item middle-btn">Sign Up</button></li>
+        </ul>
+      </div>
+      <!-- end for medium screens -->
     </nav>
   </header>
   <section class="section-one">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-8">
-          <div class="info">Best E-learning platform</div>
+        <div class="col-lg-8 col-12">
+          <div class="e-learning-platform">Best E-learning platform</div>
           <div class="main_test">
             <p>Getting Best</p>
             <p>Quality Education</p>
             <p>is now more easier</p>
           </div>
-          <p class="lorem">
+          <p class="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum odio
             nobis repellendus. Inventore ad magnam ducimus neque enim ea esse?
           </p>
           <div class="btn-container">
-            <div class="btn btn-primary home_btn">Join Course</div>
+            <button class="btn btn-primary home_btn">Join Course</button>
           </div>
         </div>
-        <div class="col-4">
-          <img class="img-background" src="../../assets/img-background.png" alt="" />
+        <div class="col-lg-4 col-12">
+          <img
+            class="img-background"
+            src="../../assets/img-background.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -46,8 +86,8 @@
     <div class="stats_container">
       <div>
         <div class="span_container">
-          <span class="fig">8k+</span>
-          <span class="fig_exp">Success Stories</span>
+          <span class="statistic-figure">8k+</span>
+          <span class="statistic-explanation">Success Stories</span>
         </div>
       </div>
 
@@ -58,8 +98,8 @@
       </div>
       <div>
         <div class="span_container">
-          <span class="fig">200+</span>
-          <span class="fig_exp">Expert Instructors</span>
+          <span class="statistic-figure">200+</span>
+          <span class="statistic-explanation">Expert Instructors</span>
         </div>
       </div>
       <div>
@@ -69,8 +109,8 @@
       </div>
       <div>
         <div class="span_container">
-          <span class="fig">108k+</span>
-          <span class="fig_exp">Worldwide Students</span>
+          <span class="statistic-figure">108k+</span>
+          <span class="statistic-explanation">Worldwide Students</span>
         </div>
       </div>
       <div>
@@ -80,17 +120,17 @@
       </div>
       <div>
         <div class="span_container">
-          <span class="fig">310+</span>
-          <span class="fig_exp">Trendy Subjects</span>
+          <span class="statistic-figure">310+</span>
+          <span class="statistic-explanation">Trendy Subjects</span>
         </div>
       </div>
     </div>
   </section>
 
   <section class="section-three">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-5">
+        <div class="col-lg-5 col-12">
           <div class="section-three-main-test">
             <p>Why we are the best</p>
             <p>from others?</p>
@@ -103,10 +143,10 @@
             </p>
           </div>
           <div class="btn-container">
-            <div class="btn btn-primary home_btn">Start now</div>
+            <button class="btn btn-primary home_btn">Start now</button>
           </div>
         </div>
-        <div class="col-7">
+        <div class="col-lg-7 col-12 ">
           <div class="card-container">
             <div
               class="card shadow p-3 mb-5 bg-white rounded"
@@ -167,9 +207,9 @@
   </section>
 
   <section class="section-four">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <div class="card-container">
             <div
               class="card shadow p-3 mb-5 bg-white rounded"
@@ -199,7 +239,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <div class="card-container">
             <div
               class="card shadow p-3 mb-5 bg-white rounded"
@@ -232,7 +272,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <div class="card-container">
             <div
               class="card shadow p-3 mb-5 bg-white rounded"
